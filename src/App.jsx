@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css"; // Import your styles
+import Header from "./components/Header";
+import Countdown from "./components/Countdown";
 
 function App() {
-  useEffect(() => {
-    $(".sakura-falling").sakura();
-  }, []);
-
   return (
     <>
-      <div className="sakura-falling"></div>
+      <Header />
+      <Countdown/>
     </>
   );
 }

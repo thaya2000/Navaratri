@@ -12,6 +12,7 @@ export const Title = () => {
         <div className="absolute top-[148px] left-[52px] [font-family:'Poppins-Medium',Helvetica] font-medium text-[#b8b2a6] text-[20px] text-center tracking-[0] leading-[normal]">
           Navaratri Vizha 2023
         </div>
+        
       </div>
     </div>
   );

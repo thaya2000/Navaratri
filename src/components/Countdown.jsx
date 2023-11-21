@@ -49,7 +49,7 @@ const Countdown = () => {
   }, []); // No need to return anything from useEffect
 
   return (
-    <section className="timer-container">
+    <section >
       <section className="timer">
         <div className="inline-flex items-center justify-center gap-[20px] relative">
           <div className="relative w-[59px] h-[78px] bg-[#d9d9d9] rounded-[10px]">

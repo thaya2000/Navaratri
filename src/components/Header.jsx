@@ -14,7 +14,7 @@ export default function Header() {
       <img src={img2} alt="image-top-left" class="top-left-decoration" />
       <div class="wrap">
         <div class="title">
-          <h1>Navaratri Vizha</h1>
+          <h1>Welcome</h1>
           <h2>2023</h2>
           <p></p>
         </div>

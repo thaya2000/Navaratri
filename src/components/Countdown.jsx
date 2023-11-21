@@ -51,13 +51,20 @@ const Countdown = () => {
   return (
     <section className="timer-container">
       <section className="timer">
-        {timeUnit(timerDays, "Days")}
-        <span>:</span>
-        {timeUnit(timerHours, "Hours")}
-        <span>:</span>
-        {timeUnit(timerMinutes, "Minutes")}
-        <span>:</span>
-        {timeUnit(timerSeconds, "Seconds")}
+        <div className="inline-flex items-center justify-center gap-[20px] relative">
+          <div className="relative w-[59px] h-[78px] bg-[#d9d9d9] rounded-[10px]">
+            {timeUnit(timerDays, "Days")}
+          </div>
+          <div className="relative w-[59px] h-[78px] bg-[#d9d9d9] rounded-[10px]">
+            {timeUnit(timerHours, "Hours")}
+          </div>
+          <div className="relative w-[59px] h-[78px] bg-[#d9d9d9] rounded-[10px]">
+            {timeUnit(timerMinutes, "Minutes")}
+          </div>
+          <div className="relative w-[59px] h-[78px] bg-[#d9d9d9] rounded-[10px]">
+            {timeUnit(timerSeconds, "Seconds")}
+          </div>
+        </div>
       </section>
     </section>
   );

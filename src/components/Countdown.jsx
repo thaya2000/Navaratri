@@ -8,7 +8,7 @@ const Countdown = () => {
   const [timerSeconds, setTimerSeconds] = useState("00");
 
   const timeUnit = (value, unit) => (
-    <section>
+    <section className="timer-Design">
       <p>{value}</p>
       <small>{unit}</small>
     </section>
@@ -52,11 +52,8 @@ const Countdown = () => {
     <section className="timer-container">
       <section className="timer">
         {timeUnit(timerDays, "Days")}
-        <span>:</span>
         {timeUnit(timerHours, "Hours")}
-        <span>:</span>
         {timeUnit(timerMinutes, "Minutes")}
-        <span>:</span>
         {timeUnit(timerSeconds, "Seconds")}
       </section>
     </section>

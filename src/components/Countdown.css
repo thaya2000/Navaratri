@@ -7,6 +7,7 @@
 }
 
 .timer-container {
+
   width: 100vw;
   font-size: 100%;
   display: flex;
@@ -18,7 +19,6 @@
 }
 
 .timer {
-  border-radius: 3px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 3em;
@@ -26,6 +26,13 @@
   font-family: "Quicksand", sans-serif;
   font-size:small;
   color: white;
+  z-index: 1000;
+}
+.timer-Design{
+  border-width: 10px;
+  border: solid;
+  padding: 5px;
+  border-color: azure;
   z-index: 1000;
 }
 

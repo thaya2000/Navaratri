@@ -1,16 +1,19 @@
-import React from "react";
-import "./App.css"; // Import your styles
-import Header from "./components/Header";
-import Countdown from "./components/Countdown";
-import { Title } from "./components/Title";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./Pages/Home";
 
 function App() {
+  console.log("Rendering App component");
   return (
-    <>
-      <Title />
-      {/* <Header /> */}
-      <Countdown />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Navaratri" element={<Home/>} />
+        <Route
+          path="/Navaratri/:index"
+          element={<Home />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

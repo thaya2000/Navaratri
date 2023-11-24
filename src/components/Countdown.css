@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  z-index: 1000;
 }
 
 .timer-container {
@@ -16,18 +17,16 @@
 }
 
 .timer {
-  border: 1px solid #b4b0b0;
-  border-radius: 3px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 3em;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  font-size:small;
+  font-size: small;
 }
 
-.timer span{
-    font-size: 3em;
+.timer span {
+  font-size: 3em;
 }
 
 .timer p {
@@ -45,6 +44,6 @@
     padding: 0;
   }
   .timer {
-    font-size:xx-small;
+    font-size: xx-small;
   }
 }

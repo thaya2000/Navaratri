@@ -13,7 +13,6 @@ export default function Text() {
         <h3>DATE : 20.11.2023</h3>
         <h3>VENUE : AUDITORIUM</h3>
         <h3>TIME : 5.05PM ONWARDS</h3>
-        <h4>Organized by EFSU</h4>
       </div>
     </>
   );

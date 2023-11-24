@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .timer-container {
+  height: 30vh;
   width: 100vw;
   font-size: 100%;
   display: flex;
@@ -14,8 +9,8 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  position: absolute;
-  bottom: 6em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 .timer {
@@ -23,13 +18,13 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  font-size:small;
+  font-size: small;
   color: white;
   z-index: 1;
   margin: 20px;
 }
 
-.timer-Design{
+.timer-Design {
   border: 1px solid #b4b0b0;
   border-radius: 10px;
   padding: 5px;
@@ -39,9 +34,10 @@
   background-color: aliceblue;
 }
 
-
 .timer-Design p {
   font-size: 3em;
+  margin: 0px;
+
 }
 
 .timer-Design small {
@@ -56,6 +52,6 @@
     padding: 0;
   }
   .timer {
-    font-size:xx-small;
+    font-size: xx-small;
   }
 }

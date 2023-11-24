@@ -8,9 +8,14 @@ import Text from "./components/Text";
 function App() {
   return (
     <>
-      <HomeAnimation />
-      <Text />
-      <Countdown />
+      <div className="overall-container">
+        <HomeAnimation />
+        <Text />
+        <Countdown />
+        <div className="endtext">
+          <h4>Organized by EFSU</h4>
+        </div>
+      </div>
     </>
   );
 }

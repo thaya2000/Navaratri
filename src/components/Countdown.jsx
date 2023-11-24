@@ -17,7 +17,7 @@ const Countdown = () => {
   const formatTime = (time) => (time < 10 ? `0${time}` : time.toString());
 
   const startTimer = () => {
-    const countdownDate = new Date("November 24, 2023 18:00:00").getTime();
+    const countdownDate = new Date("November 29, 2023 18:00:00").getTime();
     const updateTimer = () => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

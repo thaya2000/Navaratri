@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { particle } from "../animation/particle";
+import { particle_testing } from "../animation/particle_testing";
 
 export default function HomeAnimation() {
   const particlesInit = useCallback(async (engine) => {

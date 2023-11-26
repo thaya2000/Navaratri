@@ -1,6 +1,6 @@
 import Light from "../assets/img/Light.png";
 
-export const particle = {
+export const particle_testing = {
   autoPlay: true,
   background: {
     color: { value: "#070834" },
@@ -109,7 +109,7 @@ export const particle = {
           value: 1,
         },
       },
-      enable: false,
+      enable: true,
       maxSpeed: 10,
       mode: "bounce",
       overlap: { enable: false, retries: 0 },
@@ -163,7 +163,7 @@ export const particle = {
       enable: true,
       gravity: {
         acceleration: 9.81,
-        enable: false,
+        enable: true,
         inverse: false,
         maxSpeed: 5,
       },
@@ -182,9 +182,9 @@ export const particle = {
       },
       random: false,
       size: false,
-      speed: { min: 2, max: 5 },
+      speed: 1,
       spin: { acceleration: 0, enable: false },
-      straight: true,
+      straight: false,
       trail: { enable: false, length: 10, fill: {} },
       vibrate: false,
       warp: false,
@@ -196,11 +196,11 @@ export const particle = {
     },
     opacity: {
       random: { enable: false, minimumValue: 1 },
-      value: { min: 0.2, max: 0.8 },
+      value: { min: 0.8, max: 1 },
       animation: {
         count: 0,
-        enable: true,
-        speed: 1,
+        enable: false,
+        speed: 3,
         decay: 0,
         delay: 0,
         sync: false,
@@ -221,7 +221,7 @@ export const particle = {
       type: "images",
       options: {
         images: {
-          src: "https://raw.githubusercontent.com/thaya2000/image_upload/main/Circle_Animation.png",
+          src: "https://raw.githubusercontent.com/thaya2000/image_upload/main/new_animation.png",
           width: 100,
           height: 100,
         },
@@ -229,10 +229,10 @@ export const particle = {
     },
     size: {
       random: { enable: false, value: 5 },
-      value: 100,
+      value: { min: 50, max: 100 },
       animation: {
         count: 0,
-        enable: true,
+        enable: false,
         speed: 100,
         decay: 0,
         delay: 0,
@@ -256,12 +256,12 @@ export const particle = {
       mode: "collision", // Change this line
       split: {
         count: 2,
-        factor: { random: { enable: true, minimumValue: 0 }, value: 3 },
+        factor: { random: { enable: false, minimumValue: 0 }, value: 3 },
         rate: {
-          random: { enable: true, minimumValue: 0 },
+          random: { enable: false, minimumValue: 0 },
           value: { min: 4, max: 9 },
         },
-        sizeOffset: true,
+        sizeOffset: false,
       },
     },
     roll: {
@@ -280,7 +280,7 @@ export const particle = {
     },
     twinkle: {
       lines: { enable: false, frequency: 0.05, opacity: 1 },
-      particles: { enable: true, frequency: 0.001, opacity: 1 },
+      particles: { enable: false, frequency: 0.001, opacity: 1 },
     },
     wobble: { distance: 5, enable: false, speed: { angle: 50, move: 10 } },
     life: {
@@ -341,11 +341,11 @@ export const particle = {
     },
   },
   pauseOnBlur: false,
-  pauseOnOutsideViewport: true,
+  pauseOnOutsideViewport: false,
   responsive: [],
   smooth: false,
   style: {},
   themes: [],
   zLayers: 100,
-  motion: { disable: true, reduce: { factor: 4, value: true } },
+  motion: { disable: false, reduce: { factor: 4, value: true } },
 };
